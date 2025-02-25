@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+/* Animations et transitions */
+.hover\:shadow-md,
+.hover\:bg-blue-700,
+.hover\:bg-red-700,
+.hover\:text-blue-900,
+.hover\:text-red-900,
+.hover\:text-blue-800,
+.hover\:bg-gray-50 {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
