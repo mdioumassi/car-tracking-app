@@ -1,16 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-const ownerRoutes = require('./ownerRoutes');
+
 const driverRoutes = require('./driverRoutes');
 const carRoutes = require('./carRoutes');
 const routeRoutes = require('./routeRoutes');
-const positionRoutes = require('./positionRoutes');
+const userRoutes = require('./userRoutes');
+const authRoutes = require('./authRoutes');
 
-router.use('/owners', ownerRoutes);
+
 router.use('/drivers', driverRoutes);
 router.use('/cars', carRoutes);
 router.use('/routes', routeRoutes);
-router.use('/positions', positionRoutes);
+router.use('/users', userRoutes);
+router.use('/auth', authRoutes);
+
 
 module.exports = router;
